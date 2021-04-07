@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+ 
+  <ion-toolbar color="primary">
+    <ion-title>
+      Acceuil
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding" color="tertiary">
+  <ion-slides pager="true">
+
+    <ion-slide>
+    
+      <img class= "images" src="../assets/images/parkafrique.png" alt="">
+    </ion-slide>
+
+    <ion-slide>
+      
+      <img class= "images" src="../assets/images/parkafrique.png" alt="">
+      
+    </ion-slide>
+
+    <ion-slide>
+   
+      <img class= "images" src="../assets/images/parkafrique.png" alt="">
+      
+    </ion-slide>
+
+   
+
+  </ion-slides>
+  <ion-text>
+    <h1>Bienvenue.
+    </h1>
+
+    <p>Gestion Communale du Stationnement<br>au Sénégal</p>
+  </ion-text>
+  <div class="actions">
+    <div class="login-buttons">
+      <ion-button>
+        <ion-avatar>
+          <img class="RSimages" src="../assets/images/f.png">
+        </ion-avatar>
+        <ion-label>Facebook</ion-label>
+      </ion-button>
+
+      <ion-button>
+        <ion-avatar>
+          <img class="RSimages" src="../assets/images/g.jpg">
+        </ion-avatar>
+        <ion-label>Google</ion-label>
+      </ion-button>
+    </div>
+    <div class="separator">
+      <span>or</span>
+      <span class="line left"></span>
+      <span class="line right"></span>
+    </div>
+    
+    <ion-button class="signup-btn" expand="block" color="primary">
+     
+      Email
+    </ion-button>
+  
+    <p class="login" >Utilisateur existant ? <a  routerLink="/home"><i color="secondary">Se connecter</i></a></p>
+  </div>
+</ion-content>

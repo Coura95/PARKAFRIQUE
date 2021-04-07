@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+  </ion-toolbar>
+</ion-header>
+<!--<ion-header>
+  <ion-toolbar color="primary">
+
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/signup">Sign up
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content color="tertiary">
+  <div id="header">
+    <h1>Login</h1>
+    <img src="../assets/images/parkafrique.png" alt="">
+  </div>
+  <form id="#form">
+
+    <ion-item lines="none">
+      <ion-label>
+        <ion-input placeholder="Email" [(ngModel)]="user.username" name="username"></ion-input>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label>
+        <ion-input placeholder="Password" [(ngModel)]="user.password" name="password" type="password" ui-show-password required></ion-input>
+      </ion-label>
+    </ion-item>
+
+    <ion-button expand="block" shape="round" (click)="connect()" color="secondary" >
+      Connexion</ion-button>
+  </form>
+</ion-content>

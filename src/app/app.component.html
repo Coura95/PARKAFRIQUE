@@ -1,0 +1,85 @@
+<ion-app>
+  <ion-menu  ion-button menuClose="left" menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg" ></div>
+      <div class="header-content">
+        <img src="../assets/images/parkafrique.png" alt="">
+        <ion-label>
+          <h2 style="color: #628cff"><u><b>PARKAFRIQUE</b></u></h2>
+          <p><b>Gestion des Stationnements</b></p>
+        </ion-label>
+      </div>
+     <!-- <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Add Branch
+        </ion-button>
+      </div>-->
+      <ion-menu-toggle auto-hide="false">
+      <ion-list lines="none" class="menu-items">
+
+        <ion-item   class="active" routerLink="/home">
+          <ion-icon name="home"></ion-icon>Acceuil
+        </ion-item>
+
+        <ion-item  routerLink="/stationnements">
+          <ion-icon name="car" ></ion-icon>Liste Stationnements
+        </ion-item>
+        
+      <!-- <ion-item routerLink="/newstationnements">
+          <ion-icon name="browsers-outline" ></ion-icon>Ajouter Stationnement
+        </ion-item>-->
+
+        <ion-item  routerLink="/liste-stationirregulier">
+          <ion-icon name="thumbs-down"></ion-icon>Liste Infractions
+        </ion-item>
+        
+       <!--<ion-item routerLink="/stationirregulier">
+          <ion-icon name="browsers-outline" ></ion-icon>Ajouter Infraction
+        </ion-item>-->
+
+        <ion-item  routerLink="/liste-stationabonner">
+          <ion-icon name="people" ></ion-icon>Liste Abonnements
+        </ion-item>
+        
+      <!-- <ion-item routerLink="/stationabonner">
+          <ion-icon name="browsers-outline" ></ion-icon>Ajouter Abonnement
+        </ion-item>
+
+        <ion-item routerLink="/comptabilite">
+          <ion-icon name="cash" ></ion-icon>Comptabilité
+        </ion-item>-->
+
+        
+        
+         <!--  <ion-item routerLink="/phototheque">
+          <ion-icon name="camera" ></ion-icon>Photothèque
+        </ion-item>
+
+       
+
+        <ion-item routerLink="/annoncer">
+          <ion-icon name="chatbubble-ellipses-outline" ></ion-icon>Rechercher Annonce
+        </ion-item>
+
+        <ion-item routerLink="/signup">
+          <ion-icon name="heart-outline"></ion-icon>Inscription
+        </ion-item>
+
+        <ion-item routerLink="/login">
+          <ion-icon name="exit-outline" ></ion-icon>Connexion
+        </ion-item>-->
+
+        <ion-item  routerLink="/">
+          <ion-icon name="log-out"></ion-icon>Deconnexion
+        </ion-item>
+
+      </ion-list>
+    </ion-menu-toggle>
+
+    </ion-content>
+    <div class="bar bar-footer footer-button"  style=" text-align: center; background-color: #020b33;">
+      <a href="http://copyright.be" target="_blank" style="color:aliceblue;text-align: center;">Copyright © - Tous droits réservés</a>
+    </div>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
